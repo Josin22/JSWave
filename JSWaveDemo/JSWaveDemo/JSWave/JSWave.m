@@ -99,7 +99,6 @@
 - (void)startWaveAnimation{
     
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(wave)];
-    
     [self.timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
 }
