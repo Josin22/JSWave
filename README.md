@@ -4,6 +4,10 @@
 ![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/jswave.gif)
 
 
+## 觉得效果可以,请右上角star一下,谢谢~
+## 觉得效果可以,请右上角star一下,谢谢~
+## 觉得效果可以,请右上角star一下,谢谢~
+
 # 你需要知道的
 
 ## CADisplayLink
