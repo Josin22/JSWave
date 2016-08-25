@@ -1,7 +1,7 @@
 
 # 效果演示
 
-![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/jsnewwave.gif)
+![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/jswave.gif)
 
 
 ## 觉得效果可以,请右上角star一下,谢谢~
