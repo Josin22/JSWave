@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define XNColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+typedef void(^JSWaveBlock)(CGFloat currentY);
+
 @interface JSWave : UIView
 /**
  *  浪弯曲度
@@ -29,6 +33,8 @@
  *  遮罩浪颜色
  */
 @property (nonatomic, strong) UIColor *maskWaveColor;
+
+@property (nonatomic, copy) JSWaveBlock waveBlock;
 
 - (void)stopWaveAnimation;
 

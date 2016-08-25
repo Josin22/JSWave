@@ -1,27 +1,31 @@
 //
-//  ViewController.m
+//  BDViewController.m
 //  JSWaveDemo
 //
 //  Created by 乔同新 on 16/8/20.
 //  Copyright © 2016年 乔同新. All rights reserved.
 //  Github  Demo  ::  https://github.com/Josin22/JSWave/
 
-#import "ViewController.h"
+#import "BDViewController.h"
 #import "JSWave.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface BDViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) JSWave *headerView;
 
+@property (nonatomic, strong) UIImageView *iconImageView;
+
 @end
 
-@implementation ViewController
+@implementation BDViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     [self.view addSubview:self.tableView];
 }
 
@@ -40,12 +44,30 @@
     return _tableView;
 }
 
+- (UIImageView *)iconImageView{
+    
+    if (!_iconImageView) {
+        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.headerView.frame.size.width/2-30, 0, 60, 60)];
+        _iconImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+        _iconImageView.layer.borderWidth = 2;
+        _iconImageView.layer.cornerRadius = 20;
+    }
+    return _iconImageView;
+}
 
 - (JSWave *)headerView{
     
     if (!_headerView) {
         _headerView = [[JSWave alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
-        _headerView.backgroundColor = [UIColor redColor];
+        _headerView.backgroundColor = XNColor(248, 64, 87, 1);
+        [_headerView addSubview:self.iconImageView];
+        __weak typeof(self)weakSelf = self;
+        _headerView.waveBlock = ^(CGFloat currentY){
+                CGRect iconFrame = [weakSelf.iconImageView frame];
+                iconFrame.origin.y = CGRectGetHeight(weakSelf.headerView.frame)-CGRectGetHeight(weakSelf.iconImageView.frame)+currentY-weakSelf.headerView.waveHeight;
+                weakSelf.iconImageView.frame  =iconFrame;
+        };
+        [_headerView startWaveAnimation];
     }
     return _headerView;
 }
@@ -67,7 +89,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"
                                                             forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"index -- %ld",indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"这头像好浪~~~~ +%ld",indexPath.row];
     
     return cell;
 }

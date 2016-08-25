@@ -18,8 +18,6 @@
 
 @property (nonatomic, assign) CGFloat offset;
 
-@property (nonatomic, strong) UIImageView *iconImageView;
-
 @end
 
 @implementation JSWave
@@ -49,31 +47,16 @@
 
 - (void)initData{
     //初始化
-    self.waveSpeed = 0.7;
-    self.waveCurvature = 2.0;
-    self.waveHeight = 5;
+    self.waveSpeed = 0.5;
+    self.waveCurvature = 1.5;
+    self.waveHeight = 4;
     self.realWaveColor = [UIColor whiteColor];
     self.maskWaveColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4];
     
     [self.layer addSublayer:self.realWaveLayer];
     [self.layer addSublayer:self.maskWaveLayer];
-    
-    [self addSubview:self.iconImageView];
-    
-    [self startWaveAnimation];
-}
 
-- (UIImageView *)iconImageView{
-    
-    if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width/2-30, 0, 60, 60)];
-        _iconImageView.layer.borderColor = [UIColor whiteColor].CGColor;
-        _iconImageView.layer.borderWidth = 2;
-        _iconImageView.layer.cornerRadius = 20;
-    }
-    return _iconImageView;
 }
-
 
 - (CAShapeLayer *)realWaveLayer{
     
@@ -102,6 +85,21 @@
     return _maskWaveLayer;
 }
 
+- (void)setWaveHeight:(CGFloat)waveHeight{
+    _waveHeight = waveHeight;
+    
+    CGRect frame = [self bounds];
+    frame.origin.y = frame.size.height-self.waveHeight;
+    frame.size.height = self.waveHeight;
+    _realWaveLayer.frame = frame;
+    
+    CGRect frame1 = [self bounds];
+    frame1.origin.y = frame1.size.height-self.waveHeight;
+    frame1.size.height = self.waveHeight;
+    _maskWaveLayer.frame = frame1;
+
+}
+
 - (void)startWaveAnimation{
     
     self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(wave)];
@@ -120,38 +118,37 @@
     self.offset += self.waveSpeed;
     
     CGFloat width = CGRectGetWidth(self.frame);
-    CGFloat height = CGRectGetHeight(_realWaveLayer.frame);
-    CGFloat selfHeight = CGRectGetHeight(self.frame);
-    CGFloat iconHeight = CGRectGetHeight(_iconImageView.frame);
+    CGFloat height = self.waveHeight;
     
     //真实浪
     CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, NULL, 0, height );
+    CGPathMoveToPoint(path, NULL, 0, height);
     CGFloat y = 0.f;
+    //遮罩浪
+    CGMutablePathRef maskpath = CGPathCreateMutable();
+    CGPathMoveToPoint(maskpath, NULL, 0, height);
+    CGFloat maskY = 0.f;
     for (CGFloat x = 0.f; x <= width ; x++) {
         y = height * sinf(0.01 * self.waveCurvature * x + self.offset * 0.045);
         CGPathAddLineToPoint(path, NULL, x, y);
+        maskY = -y;
+        CGPathAddLineToPoint(maskpath, NULL, x, maskY);
     }
     
+    //变化的中间Y值
     CGFloat centX = self.bounds.size.width/2;
     CGFloat CentY = height * sinf(0.01 * self.waveCurvature *centX  + self.offset * 0.045);
-    CGRect iconFrame = [self.iconImageView frame];
-    iconFrame.origin.y = selfHeight-iconHeight+CentY-height;
-    self.iconImageView.frame  =iconFrame;
+    if (self.waveBlock) {
+        self.waveBlock(CentY);
+    }
+
     CGPathAddLineToPoint(path, NULL, width, height);
     CGPathAddLineToPoint(path, NULL, 0, height);
     CGPathCloseSubpath(path);
     self.realWaveLayer.path = path;
     self.realWaveLayer.fillColor = self.realWaveColor.CGColor;
     CGPathRelease(path);
-    //遮罩浪
-    CGMutablePathRef maskpath = CGPathCreateMutable();
-    CGPathMoveToPoint(maskpath, NULL, 0, height);
-    CGFloat maskY = 0.f;
-    for (CGFloat x = 0.f; x <= width ; x++) {
-        maskY = height * cosf(0.01 * self.waveCurvature * x + self.offset * 0.045);
-        CGPathAddLineToPoint(maskpath, NULL, x, maskY);
-    }
+
     CGPathAddLineToPoint(maskpath, NULL, width, height);
     CGPathAddLineToPoint(maskpath, NULL, 0, height);
     CGPathCloseSubpath(maskpath);

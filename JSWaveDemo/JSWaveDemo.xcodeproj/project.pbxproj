@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		546CD9CA1D6EDAEC0007567F /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD9C91D6EDAEC0007567F /* BDViewController.m */; };
+		547EC8621D6F0B3800BEF16B /* baidu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 547EC85B1D6F0B3800BEF16B /* baidu.gif */; };
+		547EC8631D6F0B3800BEF16B /* code_wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 547EC85C1D6F0B3800BEF16B /* code_wave.png */; };
+		547EC8641D6F0B3800BEF16B /* code_wave_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 547EC85D1D6F0B3800BEF16B /* code_wave_h.png */; };
+		547EC8651D6F0B3800BEF16B /* cosf.png in Resources */ = {isa = PBXBuildFile; fileRef = 547EC85E1D6F0B3800BEF16B /* cosf.png */; };
+		547EC8661D6F0B3800BEF16B /* jswave.gif in Resources */ = {isa = PBXBuildFile; fileRef = 547EC85F1D6F0B3800BEF16B /* jswave.gif */; };
+		547EC8671D6F0B3800BEF16B /* sinf.png in Resources */ = {isa = PBXBuildFile; fileRef = 547EC8601D6F0B3800BEF16B /* sinf.png */; };
+		547EC8681D6F0B3800BEF16B /* taobao_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 547EC8611D6F0B3800BEF16B /* taobao_bg.png */; };
 		54BDE0D41D6807AC00A97090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BDE0D31D6807AC00A97090 /* main.m */; };
 		54BDE0D71D6807AC00A97090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BDE0D61D6807AC00A97090 /* AppDelegate.m */; };
-		54BDE0DA1D6807AC00A97090 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BDE0D91D6807AC00A97090 /* ViewController.m */; };
 		54BDE0DD1D6807AC00A97090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0DB1D6807AC00A97090 /* Main.storyboard */; };
 		54BDE0DF1D6807AC00A97090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0DE1D6807AC00A97090 /* Assets.xcassets */; };
 		54BDE0E21D6807AC00A97090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0E01D6807AC00A97090 /* LaunchScreen.storyboard */; };
@@ -17,12 +24,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		546CD9C81D6EDAEC0007567F /* BDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
+		546CD9C91D6EDAEC0007567F /* BDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
+		547EC85B1D6F0B3800BEF16B /* baidu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = baidu.gif; sourceTree = "<group>"; };
+		547EC85C1D6F0B3800BEF16B /* code_wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code_wave.png; sourceTree = "<group>"; };
+		547EC85D1D6F0B3800BEF16B /* code_wave_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code_wave_h.png; sourceTree = "<group>"; };
+		547EC85E1D6F0B3800BEF16B /* cosf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cosf.png; sourceTree = "<group>"; };
+		547EC85F1D6F0B3800BEF16B /* jswave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jswave.gif; sourceTree = "<group>"; };
+		547EC8601D6F0B3800BEF16B /* sinf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinf.png; sourceTree = "<group>"; };
+		547EC8611D6F0B3800BEF16B /* taobao_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taobao_bg.png; sourceTree = "<group>"; };
 		54BDE0CF1D6807AC00A97090 /* JSWaveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSWaveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BDE0D31D6807AC00A97090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54BDE0D51D6807AC00A97090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54BDE0D61D6807AC00A97090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		54BDE0D81D6807AC00A97090 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54BDE0D91D6807AC00A97090 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54BDE0DC1D6807AC00A97090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54BDE0DE1D6807AC00A97090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BDE0E11D6807AC00A97090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +56,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		547EC85A1D6F0B3800BEF16B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				547EC85B1D6F0B3800BEF16B /* baidu.gif */,
+				547EC85C1D6F0B3800BEF16B /* code_wave.png */,
+				547EC85D1D6F0B3800BEF16B /* code_wave_h.png */,
+				547EC85E1D6F0B3800BEF16B /* cosf.png */,
+				547EC85F1D6F0B3800BEF16B /* jswave.gif */,
+				547EC8601D6F0B3800BEF16B /* sinf.png */,
+				547EC8611D6F0B3800BEF16B /* taobao_bg.png */,
+			);
+			name = Images;
+			path = ../../Images;
+			sourceTree = "<group>";
+		};
 		54BDE0C61D6807AC00A97090 = {
 			isa = PBXGroup;
 			children = (
@@ -64,8 +93,8 @@
 				54BDE0E91D680BD100A97090 /* JSWave */,
 				54BDE0D51D6807AC00A97090 /* AppDelegate.h */,
 				54BDE0D61D6807AC00A97090 /* AppDelegate.m */,
-				54BDE0D81D6807AC00A97090 /* ViewController.h */,
-				54BDE0D91D6807AC00A97090 /* ViewController.m */,
+				546CD9C81D6EDAEC0007567F /* BDViewController.h */,
+				546CD9C91D6EDAEC0007567F /* BDViewController.m */,
 				54BDE0DB1D6807AC00A97090 /* Main.storyboard */,
 				54BDE0DE1D6807AC00A97090 /* Assets.xcassets */,
 				54BDE0E01D6807AC00A97090 /* LaunchScreen.storyboard */,
@@ -78,6 +107,7 @@
 		54BDE0D21D6807AC00A97090 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				547EC85A1D6F0B3800BEF16B /* Images */,
 				54BDE0D31D6807AC00A97090 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -123,6 +153,7 @@
 				TargetAttributes = {
 					54BDE0CE1D6807AC00A97090 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V3PF77Z744;
 					};
 				};
 			};
@@ -149,9 +180,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547EC8631D6F0B3800BEF16B /* code_wave.png in Resources */,
 				54BDE0E21D6807AC00A97090 /* LaunchScreen.storyboard in Resources */,
+				547EC8671D6F0B3800BEF16B /* sinf.png in Resources */,
+				547EC8641D6F0B3800BEF16B /* code_wave_h.png in Resources */,
+				547EC8681D6F0B3800BEF16B /* taobao_bg.png in Resources */,
 				54BDE0DF1D6807AC00A97090 /* Assets.xcassets in Resources */,
+				547EC8621D6F0B3800BEF16B /* baidu.gif in Resources */,
 				54BDE0DD1D6807AC00A97090 /* Main.storyboard in Resources */,
+				547EC8661D6F0B3800BEF16B /* jswave.gif in Resources */,
+				547EC8651D6F0B3800BEF16B /* cosf.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BDE0DA1D6807AC00A97090 /* ViewController.m in Sources */,
+				546CD9CA1D6EDAEC0007567F /* BDViewController.m in Sources */,
 				54BDE0D71D6807AC00A97090 /* AppDelegate.m in Sources */,
 				54BDE0D41D6807AC00A97090 /* main.m in Sources */,
 				54BDE0EC1D680BF300A97090 /* JSWave.m in Sources */,
@@ -277,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JSWaveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.JSWaveDemo;
@@ -288,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = JSWaveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jyd.JSWaveDemo;
@@ -314,6 +354,7 @@
 				54BDE0E81D6807AC00A97090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
