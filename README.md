@@ -44,10 +44,19 @@ CALayer的子类,通常结合CGPath来绘制图形.
 UIView --> 2个CAShapeLayer --> imageView.frame.orgin.y调整
 
 # 主要代码实现
+## 头文件
+
+![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/code_wave_h.png)
+
+##  实现
 
 ![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/code_wave.png)
 
-![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/code_wave_h.png)
+## 调用
+![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/wave_uses.png)
+
+
+
 
 
 更多详细请移步[我的博客](http://qiaotongxin.cc/2016/08/22/20160822/#more)
