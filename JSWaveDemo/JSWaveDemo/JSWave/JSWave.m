@@ -49,8 +49,8 @@
 
 - (void)initData{
     //初始化
-    self.speed = 0.7;
-    self.waveSpeed = 1.5;
+    self.waveSpeed = 0.7;
+    self.waveCurvature = 2.0;
     self.waveHeight = 5;
     self.realWaveColor = [UIColor whiteColor];
     self.maskWaveColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4];
@@ -66,7 +66,7 @@
 - (UIImageView *)iconImageView{
     
     if (!_iconImageView) {
-        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width/2-30, -60, 60, 60)];
+        _iconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width/2-30, 0, 60, 60)];
         _iconImageView.layer.borderColor = [UIColor whiteColor].CGColor;
         _iconImageView.layer.borderWidth = 2;
         _iconImageView.layer.cornerRadius = 20;
@@ -79,7 +79,10 @@
     
     if (!_realWaveLayer) {
         _realWaveLayer = [CAShapeLayer layer];
-        _realWaveLayer.frame =  self.bounds;
+        CGRect frame = [self bounds];
+        frame.origin.y = frame.size.height-self.waveHeight;
+        frame.size.height = self.waveHeight;
+        _realWaveLayer.frame = frame;
         _realWaveLayer.fillColor = self.realWaveColor.CGColor;
         
     }
@@ -90,7 +93,10 @@
     
     if (!_maskWaveLayer) {
         _maskWaveLayer = [CAShapeLayer layer];
-        _maskWaveLayer.frame =  self.bounds;
+        CGRect frame = [self bounds];
+        frame.origin.y = frame.size.height-self.waveHeight;
+        frame.size.height = self.waveHeight;
+        _maskWaveLayer.frame = frame;
         _maskWaveLayer.fillColor = self.maskWaveColor.CGColor;
     }
     return _maskWaveLayer;
@@ -111,24 +117,26 @@
 
 - (void)wave{
     
-    self.offset += self.speed;
+    self.offset += self.waveSpeed;
     
     CGFloat width = CGRectGetWidth(self.frame);
-    CGFloat height = CGRectGetHeight(self.frame);
+    CGFloat height = CGRectGetHeight(_realWaveLayer.frame);
+    CGFloat selfHeight = CGRectGetHeight(self.frame);
+    CGFloat iconHeight = CGRectGetHeight(_iconImageView.frame);
     
     //真实浪
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, 0, height );
     CGFloat y = 0.f;
     for (CGFloat x = 0.f; x <= width ; x++) {
-        y = height * sinf(0.01 * self.waveSpeed * x + self.offset * 0.045);
+        y = height * sinf(0.01 * self.waveCurvature * x + self.offset * 0.045);
         CGPathAddLineToPoint(path, NULL, x, y);
     }
     
     CGFloat centX = self.bounds.size.width/2;
-    CGFloat CentY = height * sinf(0.01 * self.waveSpeed *centX  + self.offset * 0.045);
+    CGFloat CentY = height * sinf(0.01 * self.waveCurvature *centX  + self.offset * 0.045);
     CGRect iconFrame = [self.iconImageView frame];
-    iconFrame.origin.y = CentY-60;
+    iconFrame.origin.y = selfHeight-iconHeight+CentY-height;
     self.iconImageView.frame  =iconFrame;
     CGPathAddLineToPoint(path, NULL, width, height);
     CGPathAddLineToPoint(path, NULL, 0, height);
@@ -141,7 +149,7 @@
     CGPathMoveToPoint(maskpath, NULL, 0, height);
     CGFloat maskY = 0.f;
     for (CGFloat x = 0.f; x <= width ; x++) {
-        maskY = height * cosf(0.01 * self.waveSpeed * x + self.offset * 0.045);
+        maskY = height * cosf(0.01 * self.waveCurvature * x + self.offset * 0.045);
         CGPathAddLineToPoint(maskpath, NULL, x, maskY);
     }
     CGPathAddLineToPoint(maskpath, NULL, width, height);
@@ -150,8 +158,6 @@
     self.maskWaveLayer.path = maskpath;
     self.maskWaveLayer.fillColor = self.maskWaveColor.CGColor;
     CGPathRelease(maskpath);
-    
-
     
 }
 

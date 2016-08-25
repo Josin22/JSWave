@@ -12,11 +12,11 @@
 /**
  *  浪弯曲度
  */
-@property (nonatomic, assign) CGFloat waveSpeed;
+@property (nonatomic, assign) CGFloat waveCurvature;
 /**
  *  浪速
  */
-@property (nonatomic, assign) CGFloat speed;
+@property (nonatomic, assign) CGFloat waveSpeed;
 /**
  *  浪高
  */

@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) JSWave *headerView;
 
 @end
 
@@ -41,13 +41,11 @@
 }
 
 
-- (UIView *)headerView{
+- (JSWave *)headerView{
     
     if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+        _headerView = [[JSWave alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
         _headerView.backgroundColor = [UIColor redColor];
-        JSWave *wave = [[JSWave alloc] initWithFrame:CGRectMake(0, 195, _headerView.frame.size.width, 5)];
-        [_headerView addSubview:wave];
     }
     return _headerView;
 }
