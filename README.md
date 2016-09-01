@@ -1,3 +1,8 @@
+# JSWave
+[![GitHub license](https://img.shields.io/badge/platform-ios-green.svg
+)](https://github.com/josin22/JSWave)
+[![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/josin22/JSWave/master/LICENSE)
+[![CocoaPods Compatible](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/josin22/JSWave)
 
 # 效果演示
 
