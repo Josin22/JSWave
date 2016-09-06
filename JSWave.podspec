@@ -5,8 +5,6 @@ Pod::Spec.new do |s|
   s.summary  = "JSWave animation" 
   s.homepage = 'https://github.com/Josin22/JSWave' 
   s.authors  = { 'Josin' => 'josin.mc@gmail.com' } 
-  s.source   = {  :git => "https://github.com/Josin22/JSWave.git", :tag => "1.0.0"  }
-  s.source_files  = 'JSWave'
-  s.platform     = :ios, '7.0'   
-  s.frameworks = 'UIKit' 
+  s.source   = {  :git => "https://github.com/Josin22/JSWave.git", :tag => "1.0.0"}
+  s.source_files  = 'Classes'
 end 
