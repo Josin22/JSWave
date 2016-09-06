@@ -14,7 +14,6 @@
 		54BDE0DD1D6807AC00A97090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0DB1D6807AC00A97090 /* Main.storyboard */; };
 		54BDE0DF1D6807AC00A97090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0DE1D6807AC00A97090 /* Assets.xcassets */; };
 		54BDE0E21D6807AC00A97090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDE0E01D6807AC00A97090 /* LaunchScreen.storyboard */; };
-		54BDE0EC1D680BF300A97090 /* JSWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BDE0EB1D680BF300A97090 /* JSWave.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +28,6 @@
 		54BDE0DE1D6807AC00A97090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BDE0E11D6807AC00A97090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54BDE0E31D6807AC00A97090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54BDE0EA1D680BF300A97090 /* JSWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWave.h; sourceTree = "<group>"; };
-		54BDE0EB1D680BF300A97090 /* JSWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +67,6 @@
 		54BDE0D11D6807AC00A97090 /* JSWaveDemo */ = {
 			isa = PBXGroup;
 			children = (
-				54BDE0E91D680BD100A97090 /* JSWave */,
 				547EC87E1D6F30D400BEF16B /* AppDelegate.h */,
 				547EC87F1D6F30D400BEF16B /* AppDelegate.m */,
 				547EC87B1D6F30BE00BEF16B /* BDViewController.h */,
@@ -92,15 +88,6 @@
 				54BDE0D31D6807AC00A97090 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		54BDE0E91D680BD100A97090 /* JSWave */ = {
-			isa = PBXGroup;
-			children = (
-				54BDE0EA1D680BF300A97090 /* JSWave.h */,
-				54BDE0EB1D680BF300A97090 /* JSWave.m */,
-			);
-			path = JSWave;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +163,6 @@
 			files = (
 				547EC87D1D6F30BE00BEF16B /* BDViewController.m in Sources */,
 				54BDE0D41D6807AC00A97090 /* main.m in Sources */,
-				54BDE0EC1D680BF300A97090 /* JSWave.m in Sources */,
 				547EC8801D6F30D400BEF16B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
