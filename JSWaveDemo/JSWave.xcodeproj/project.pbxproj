@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54459DC51D7EC8C000130E12 /* JSWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 54459DC41D7EC8C000130E12 /* JSWave.m */; };
 		544A761F1D706B95007CDFAF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 544A761E1D706B95007CDFAF /* LICENSE */; };
 		547EC87D1D6F30BE00BEF16B /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 547EC87C1D6F30BE00BEF16B /* BDViewController.m */; };
 		547EC8801D6F30D400BEF16B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 547EC87F1D6F30D400BEF16B /* AppDelegate.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54459DC31D7EC8C000130E12 /* JSWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWave.h; sourceTree = "<group>"; };
+		54459DC41D7EC8C000130E12 /* JSWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWave.m; sourceTree = "<group>"; };
 		544A761E1D706B95007CDFAF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
 		547EC87B1D6F30BE00BEF16B /* BDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
 		547EC87C1D6F30BE00BEF16B /* BDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
@@ -41,6 +44,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54459DC21D7EC8C000130E12 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54459DC31D7EC8C000130E12 /* JSWave.h */,
+				54459DC41D7EC8C000130E12 /* JSWave.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
 		544A761D1D706B6F007CDFAF /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,7 @@
 		54BDE0D11D6807AC00A97090 /* JSWaveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				54459DC21D7EC8C000130E12 /* Classes */,
 				547EC87E1D6F30D400BEF16B /* AppDelegate.h */,
 				547EC87F1D6F30D400BEF16B /* AppDelegate.m */,
 				547EC87B1D6F30BE00BEF16B /* BDViewController.h */,
@@ -164,6 +178,7 @@
 				547EC87D1D6F30BE00BEF16B /* BDViewController.m in Sources */,
 				54BDE0D41D6807AC00A97090 /* main.m in Sources */,
 				547EC8801D6F30D400BEF16B /* AppDelegate.m in Sources */,
+				54459DC51D7EC8C000130E12 /* JSWave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
