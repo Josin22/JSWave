@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  JSWaveDemo
 //
-//  Created by 乔同新 on 16/9/7.
+//  Created by 乔同新 on 16/8/20.
 //  Copyright © 2016年 乔同新. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "BDViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    tab.tabBar.tintColor = [UIColor redColor];
+    
+    BDViewController *vc = [BDViewController new];
+    vc.title = @"BDViewController";
+    vc.tabBarItem.image = [UIImage imageNamed:@"tab_bd_normal"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [nav.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    nav.navigationBar.shadowImage = [UIImage new];
+    UIColor *textColor = [UIColor whiteColor];
+    nav.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:textColor,NSFontAttributeName:[UIFont fontWithName:@"AppleGothic" size:20]};
+    [tab addChildViewController:nav];
+    
+    self.window.rootViewController = tab;
     return YES;
 }
 

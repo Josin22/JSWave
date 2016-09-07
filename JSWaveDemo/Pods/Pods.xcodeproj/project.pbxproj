@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EF59BFFB44275C672C7ADD11507919F /* JSWave.h in Headers */ = {isa = PBXBuildFile; fileRef = 961CC141FAA32479A1F072816B3F8464 /* JSWave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		590354DC0814BB55DB62CC6CF459EF36 /* Pods-JSWaveDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C55F52FD58E62CDA98E76EE5A7F3562A /* Pods-JSWaveDemo-dummy.m */; };
+		74709D44E79DD2E4C679ED6C2CF8AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		760B65A4F220647F1E63D7797809A71C /* JSWave-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D35882925651C7F9AFEFDDAEBD29FCF4 /* JSWave-dummy.m */; };
+		82AFF8A6B673319791C06382B594AA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		D48DDC5B7F77CED9155660CC831B624C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		E670DAE77CFB784BFC71D261568862B8 /* JSWave.m in Sources */ = {isa = PBXBuildFile; fileRef = A62D1223A30C8166120604491D137E01 /* JSWave.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5B14DC54CC3BC9370BFB190A5DFD50A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09751CB9AD3D886B262B2358F8CA8D2D;
+			remoteInfo = JSWave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FF87AE76CCFD684A94C3BD07C3641B /* JSWave-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSWave-prefix.pch"; sourceTree = "<group>"; };
+		1D71A69A3DD61C4261569799A9035452 /* Pods-JSWaveDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JSWaveDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		23403901E11C8B88BC914560EC1F8FD1 /* JSWave.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSWave.xcconfig; sourceTree = "<group>"; };
+		5F57231934EE98E5E116E02436E4071D /* Pods-JSWaveDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSWaveDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6355595BFB769E258C1FD825A042C932 /* Pods-JSWaveDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSWaveDemo-frameworks.sh"; sourceTree = "<group>"; };
+		64735B4B5505043EA24F5EA3861865E6 /* Pods-JSWaveDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JSWaveDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C42C535F27846969AA78B7345977E5E /* libJSWave.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSWave.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		814A85EBE7AA095E2E1CAEE0F4A17090 /* Pods-JSWaveDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JSWaveDemo-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		961CC141FAA32479A1F072816B3F8464 /* JSWave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSWave.h; path = Classes/JSWave.h; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A327F9162AC20B5E0C7D124D680E698F /* Pods-JSWaveDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JSWaveDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A62D1223A30C8166120604491D137E01 /* JSWave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSWave.m; path = Classes/JSWave.m; sourceTree = "<group>"; };
+		C43033117AC8D4B97EAB2EE9D69CF124 /* libPods-JSWaveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSWaveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55F52FD58E62CDA98E76EE5A7F3562A /* Pods-JSWaveDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JSWaveDemo-dummy.m"; sourceTree = "<group>"; };
+		D35882925651C7F9AFEFDDAEBD29FCF4 /* JSWave-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSWave-dummy.m"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		271AEC3F2142C8C61494784D32C32C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74709D44E79DD2E4C679ED6C2CF8AD64 /* Foundation.framework in Frameworks */,
+				D48DDC5B7F77CED9155660CC831B624C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59B4BFF8C8DBF747885C70FDACF5CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AFF8A6B673319791C06382B594AA15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2376BB93E24089F0211C862B61CF2641 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C42C535F27846969AA78B7345977E5E /* libJSWave.a */,
+				C43033117AC8D4B97EAB2EE9D69CF124 /* libPods-JSWaveDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62EEDB3380C4EDC3845880FF49492D20 /* JSWave */ = {
+			isa = PBXGroup;
+			children = (
+				961CC141FAA32479A1F072816B3F8464 /* JSWave.h */,
+				A62D1223A30C8166120604491D137E01 /* JSWave.m */,
+				A14031DF1DED6D8029A4F1ACBB7BFF09 /* Support Files */,
+			);
+			path = JSWave;
+			sourceTree = "<group>";
+		};
+		727BAF7531CF70D4F31A2A13AFF726E5 /* Pods-JSWaveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1D71A69A3DD61C4261569799A9035452 /* Pods-JSWaveDemo-acknowledgements.markdown */,
+				64735B4B5505043EA24F5EA3861865E6 /* Pods-JSWaveDemo-acknowledgements.plist */,
+				C55F52FD58E62CDA98E76EE5A7F3562A /* Pods-JSWaveDemo-dummy.m */,
+				6355595BFB769E258C1FD825A042C932 /* Pods-JSWaveDemo-frameworks.sh */,
+				814A85EBE7AA095E2E1CAEE0F4A17090 /* Pods-JSWaveDemo-resources.sh */,
+				A327F9162AC20B5E0C7D124D680E698F /* Pods-JSWaveDemo.debug.xcconfig */,
+				5F57231934EE98E5E116E02436E4071D /* Pods-JSWaveDemo.release.xcconfig */,
+			);
+			name = "Pods-JSWaveDemo";
+			path = "Target Support Files/Pods-JSWaveDemo";
+			sourceTree = "<group>";
+		};
+		74B52A8F6875299FBB3D42FF09B242A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				727BAF7531CF70D4F31A2A13AFF726E5 /* Pods-JSWaveDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B462A02672156DF2B91E729B730394CB /* Pods */,
+				2376BB93E24089F0211C862B61CF2641 /* Products */,
+				74B52A8F6875299FBB3D42FF09B242A3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A14031DF1DED6D8029A4F1ACBB7BFF09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23403901E11C8B88BC914560EC1F8FD1 /* JSWave.xcconfig */,
+				D35882925651C7F9AFEFDDAEBD29FCF4 /* JSWave-dummy.m */,
+				02FF87AE76CCFD684A94C3BD07C3641B /* JSWave-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JSWave";
+			sourceTree = "<group>";
+		};
+		B462A02672156DF2B91E729B730394CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62EEDB3380C4EDC3845880FF49492D20 /* JSWave */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A555368C557BC49F0A240632472EB701 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF59BFFB44275C672C7ADD11507919F /* JSWave.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09751CB9AD3D886B262B2358F8CA8D2D /* JSWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539611EA30071DF2235B8F494B6A7523 /* Build configuration list for PBXNativeTarget "JSWave" */;
+			buildPhases = (
+				FF5357D8277BF748EB1955D8DD827A89 /* Sources */,
+				271AEC3F2142C8C61494784D32C32C5D /* Frameworks */,
+				A555368C557BC49F0A240632472EB701 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSWave;
+			productName = JSWave;
+			productReference = 6C42C535F27846969AA78B7345977E5E /* libJSWave.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B818EB7E4A52387795BEC8DF618A3A04 /* Pods-JSWaveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9013AD2D69E53CCFFA324CEC5ADA625 /* Build configuration list for PBXNativeTarget "Pods-JSWaveDemo" */;
+			buildPhases = (
+				466279B7FF86954A8647D2C60D172487 /* Sources */,
+				A59B4BFF8C8DBF747885C70FDACF5CA3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D910A34FA83706491D0A046926F42FDC /* PBXTargetDependency */,
+			);
+			name = "Pods-JSWaveDemo";
+			productName = "Pods-JSWaveDemo";
+			productReference = C43033117AC8D4B97EAB2EE9D69CF124 /* libPods-JSWaveDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2376BB93E24089F0211C862B61CF2641 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09751CB9AD3D886B262B2358F8CA8D2D /* JSWave */,
+				B818EB7E4A52387795BEC8DF618A3A04 /* Pods-JSWaveDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		466279B7FF86954A8647D2C60D172487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590354DC0814BB55DB62CC6CF459EF36 /* Pods-JSWaveDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5357D8277BF748EB1955D8DD827A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760B65A4F220647F1E63D7797809A71C /* JSWave-dummy.m in Sources */,
+				E670DAE77CFB784BFC71D261568862B8 /* JSWave.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D910A34FA83706491D0A046926F42FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSWave;
+			target = 09751CB9AD3D886B262B2358F8CA8D2D /* JSWave */;
+			targetProxy = D5B14DC54CC3BC9370BFB190A5DFD50A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0927D174E751203039BDECB2DA8EC6A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F57231934EE98E5E116E02436E4071D /* Pods-JSWaveDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		146EFC45D8A67C3037E67EBC675199A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23403901E11C8B88BC914560EC1F8FD1 /* JSWave.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSWave/JSWave-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CD69F57E4B5E07E92292F81B195D9598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A327F9162AC20B5E0C7D124D680E698F /* Pods-JSWaveDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1CC80EFA08D6460744E214706CF541B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23403901E11C8B88BC914560EC1F8FD1 /* JSWave.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JSWave/JSWave-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539611EA30071DF2235B8F494B6A7523 /* Build configuration list for PBXNativeTarget "JSWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				146EFC45D8A67C3037E67EBC675199A8 /* Debug */,
+				F1CC80EFA08D6460744E214706CF541B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9013AD2D69E53CCFFA324CEC5ADA625 /* Build configuration list for PBXNativeTarget "Pods-JSWaveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD69F57E4B5E07E92292F81B195D9598 /* Debug */,
+				0927D174E751203039BDECB2DA8EC6A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

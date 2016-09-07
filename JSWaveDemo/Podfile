@@ -1,0 +1,6 @@
+
+target 'JSWaveDemo' do
+
+pod 'JSWave'
+
+end
