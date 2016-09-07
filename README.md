@@ -4,6 +4,13 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/josin22/JSWave/master/LICENSE)
 [![CocoaPods Compatible](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/josin22/JSWave)
 
+
+# 安装
+支持pod 安装
+
+	pod 'JSWave'
+	
+
 # 效果演示
 
 ![images](https://raw.githubusercontent.com/Josin22/JSWave/master/Images/jswave.gif)
