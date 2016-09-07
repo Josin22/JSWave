@@ -97,7 +97,7 @@
 /* Begin PBXNativeTarget section */
 		540C40D11D7F9BA7009C9518 /* JSWaveDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54B46A7D1D7FA08B00D4F840 /* Build configuration list */;
+			buildConfigurationList = 54B46A7D1D7FA08B00D4F840 /* Build configuration list for PBXNativeTarget "JSWaveDemo" */;
 			buildPhases = (
 				540C40CE1D7F9BA7009C9518 /* Sources */,
 				540C40CF1D7F9BA7009C9518 /* Frameworks */,
@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 540C40CD1D7F9BA7009C9518 /* Build configuration list for PBXProject "JSWaveDemo" */;
+			buildConfigurationList = 540C40CD1D7F9BA7009C9518 /* Build configuration list for PBXProject "JSWaveDemo1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -279,6 +279,8 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "$(SRCROOT)/JSWaveDemo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.josin.wave;
 				PRODUCT_NAME = JSWaveDemo;
 			};
 			name = Debug;
@@ -288,6 +290,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "$(SRCROOT)/JSWaveDemo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.josin.wave;
 				PRODUCT_NAME = JSWaveDemo;
 			};
 			name = Release;
@@ -295,7 +299,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		540C40CD1D7F9BA7009C9518 /* Build configuration list for PBXProject "JSWaveDemo" */ = {
+		540C40CD1D7F9BA7009C9518 /* Build configuration list for PBXProject "JSWaveDemo1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540C40E71D7F9BA8009C9518 /* Debug */,
@@ -304,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54B46A7D1D7FA08B00D4F840 /* Build configuration list */ = {
+		54B46A7D1D7FA08B00D4F840 /* Build configuration list for PBXNativeTarget "JSWaveDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54B46A7B1D7FA08B00D4F840 /* Debug */,
