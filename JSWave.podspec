@@ -8,4 +8,5 @@ Pod::Spec.new do |s|
   s.source   = {  :git => "https://github.com/Josin22/JSWave.git", :tag => "1.0.1"}
   s.source_files  = "Classes/*.{h,m}" 
   s.frameworks = 'UIKit' 
+  s.platform     = :ios, '7.0'   
 end 
