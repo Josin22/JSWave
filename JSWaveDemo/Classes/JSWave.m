@@ -8,6 +8,23 @@
 
 #import "JSWave.h"
 
+@interface JSProxy : NSObject
+@property (weak, nonatomic) id executor;
+@end
+
+@implementation JSProxy
+
+-(void)callback {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    
+    [_executor performSelector:@selector(wave)];
+    
+#pragma clang diagnostic pop
+}
+
+@end
+
 @interface JSWave ()
 //刷屏器
 @property (nonatomic, strong) CADisplayLink *timer;
@@ -55,7 +72,7 @@
     
     [self.layer addSublayer:self.realWaveLayer];
     [self.layer addSublayer:self.maskWaveLayer];
-
+    
 }
 
 - (CAShapeLayer *)realWaveLayer{
@@ -97,12 +114,13 @@
     frame1.origin.y = frame1.size.height-self.waveHeight;
     frame1.size.height = self.waveHeight;
     _maskWaveLayer.frame = frame1;
-
+    
 }
 
 - (void)startWaveAnimation{
-    
-    self.timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(wave)];
+    JSProxy *proxy = [[JSProxy alloc] init];
+    proxy.executor = self;
+    self.timer = [CADisplayLink displayLinkWithTarget:proxy selector:@selector(callback)];
     [self.timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
 }
@@ -141,14 +159,14 @@
     if (self.waveBlock) {
         self.waveBlock(CentY);
     }
-
+    
     CGPathAddLineToPoint(path, NULL, width, height);
     CGPathAddLineToPoint(path, NULL, 0, height);
     CGPathCloseSubpath(path);
     self.realWaveLayer.path = path;
     self.realWaveLayer.fillColor = self.realWaveColor.CGColor;
     CGPathRelease(path);
-
+    
     CGPathAddLineToPoint(maskpath, NULL, width, height);
     CGPathAddLineToPoint(maskpath, NULL, 0, height);
     CGPathCloseSubpath(maskpath);
@@ -156,21 +174,6 @@
     self.maskWaveLayer.fillColor = self.maskWaveColor.CGColor;
     CGPathRelease(maskpath);
     
-}
-
-- (void)dealloc{
-    
-    [self stopWaveAnimation];
-    
-    if (_realWaveLayer) {
-        [_realWaveLayer removeFromSuperlayer];
-        _realWaveLayer = nil;
-    }
-    
-    if (_maskWaveLayer) {
-        [_maskWaveLayer removeFromSuperlayer];
-        _maskWaveLayer = nil;
-    }
 }
 
 @end
