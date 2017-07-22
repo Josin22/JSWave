@@ -140,42 +140,48 @@
     CGFloat width = CGRectGetWidth(self.frame);
     CGFloat height = self.waveHeight;
     
-    //真实浪
-    CGMutablePathRef path = CGPathCreateMutable();
-    CGPathMoveToPoint(path, NULL, 0, height);
-    CGFloat y = 0.f;
-    //遮罩浪
-    CGMutablePathRef maskpath = CGPathCreateMutable();
-    CGPathMoveToPoint(maskpath, NULL, 0, height);
-    CGFloat maskY = 0.f;
-    for (CGFloat x = 0.f; x <= width ; x++) {
-        y = height * sinf(0.01 * self.waveCurvature * x + self.offset * 0.045);
-        CGPathAddLineToPoint(path, NULL, x, y);
-        maskY = -y;
-        CGPathAddLineToPoint(maskpath, NULL, x, maskY);
-    }
+    //path1
+    CGMutablePathRef path1 = CGPathCreateMutable();
+    CGPathMoveToPoint(path1, NULL, 0, height);
+    CGFloat path1y = 0.f;
+    //path2
+    CGMutablePathRef path2 = CGPathCreateMutable();
+    CGPathMoveToPoint(path2, NULL, 0, height);
+    CGFloat path2Y = 0.f;
     
+    for (CGFloat x = 0.f; x <= width ; x++) {
+        path1y = height * sinf([self getSinfWithPercent:5.0f widthX:x]);
+        CGPathAddLineToPoint(path1, NULL, x, path1y);
+        
+        path2Y = height * sinf([self getSinfWithPercent:3.2f widthX:x]);
+        CGPathAddLineToPoint(path2, NULL, x, path2Y);
+        
+    }
     //变化的中间Y值
     CGFloat centX = self.bounds.size.width/2;
-    CGFloat CentY = height * sinf(0.01 * self.waveCurvature *centX  + self.offset * 0.045);
+    CGFloat CentY = height * sinf([self getSinfWithPercent:5.0f widthX:centX]);
     if (self.waveBlock) {
         self.waveBlock(CentY);
     }
     
-    CGPathAddLineToPoint(path, NULL, width, height);
-    CGPathAddLineToPoint(path, NULL, 0, height);
-    CGPathCloseSubpath(path);
-    self.realWaveLayer.path = path;
+    CGPathAddLineToPoint(path1, NULL, width, height);
+    CGPathAddLineToPoint(path1, NULL, 0, height);
+    CGPathCloseSubpath(path1);
+    self.realWaveLayer.path = path1;
     self.realWaveLayer.fillColor = self.realWaveColor.CGColor;
-    CGPathRelease(path);
+    CGPathRelease(path1);
     
-    CGPathAddLineToPoint(maskpath, NULL, width, height);
-    CGPathAddLineToPoint(maskpath, NULL, 0, height);
-    CGPathCloseSubpath(maskpath);
-    self.maskWaveLayer.path = maskpath;
+    CGPathAddLineToPoint(path2, NULL, width, height);
+    CGPathAddLineToPoint(path2, NULL, 0, height);
+    CGPathCloseSubpath(path2);
+    self.maskWaveLayer.path = path2;
     self.maskWaveLayer.fillColor = self.maskWaveColor.CGColor;
-    CGPathRelease(maskpath);
+    CGPathRelease(path2);
     
+}
+
+- (float)getSinfWithPercent:(float)percent widthX:(CGFloat)widthX{
+    return (self.waveCurvature * widthX + self.offset * percent)/100;
 }
 
 @end
