@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JSWave"
-  s.version      = "0.0.1"
+  s.version      = "1.1.0"
   s.summary      = "JSWave."
 
   # This description is used to generate tags and improve search results.
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "JSWave"
-  s.exclude_files = "JSWave/Exclude"
+  s.source_files  = "JSWave", "JSWave/**/*.{h,m}"
+  # s.exclude_files = "JSWave/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
