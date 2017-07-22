@@ -13,7 +13,7 @@
 		540C40E21D7F9BA8009C9518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540C40E11D7F9BA8009C9518 /* Assets.xcassets */; };
 		540C40E51D7F9BA8009C9518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540C40E31D7F9BA8009C9518 /* LaunchScreen.storyboard */; };
 		540C40EE1D7F9BC0009C9518 /* BDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C40ED1D7F9BC0009C9518 /* BDViewController.m */; };
-		540C40F21D7F9C02009C9518 /* JSWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C40F11D7F9C02009C9518 /* JSWave.m */; };
+		5454F0D41F232D8A001AC083 /* JSWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 5454F0D31F232D8A001AC083 /* JSWave.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		540C40E61D7F9BA8009C9518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540C40EC1D7F9BC0009C9518 /* BDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDViewController.h; sourceTree = "<group>"; };
 		540C40ED1D7F9BC0009C9518 /* BDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDViewController.m; sourceTree = "<group>"; };
-		540C40F01D7F9C02009C9518 /* JSWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWave.h; sourceTree = "<group>"; };
-		540C40F11D7F9C02009C9518 /* JSWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWave.m; sourceTree = "<group>"; };
+		5454F0D21F232D8A001AC083 /* JSWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWave.h; sourceTree = "<group>"; };
+		5454F0D31F232D8A001AC083 /* JSWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		540C40D41D7F9BA8009C9518 /* JSWaveDemo */ = {
 			isa = PBXGroup;
 			children = (
-				540C40EF1D7F9C02009C9518 /* Classes */,
+				5454F0D11F232D8A001AC083 /* JSWave */,
 				540C40D81D7F9BA8009C9518 /* AppDelegate.h */,
 				540C40D91D7F9BA8009C9518 /* AppDelegate.m */,
 				540C40EC1D7F9BC0009C9518 /* BDViewController.h */,
@@ -83,14 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		540C40EF1D7F9C02009C9518 /* Classes */ = {
+		5454F0D11F232D8A001AC083 /* JSWave */ = {
 			isa = PBXGroup;
 			children = (
-				540C40F01D7F9C02009C9518 /* JSWave.h */,
-				540C40F11D7F9C02009C9518 /* JSWave.m */,
+				5454F0D21F232D8A001AC083 /* JSWave.h */,
+				5454F0D31F232D8A001AC083 /* JSWave.m */,
 			);
-			path = Classes;
-			sourceTree = SOURCE_ROOT;
+			path = JSWave;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -118,7 +118,7 @@
 		540C40CA1D7F9BA7009C9518 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "乔同新";
 				TargetAttributes = {
 					540C40D11D7F9BA7009C9518 = {
@@ -165,7 +165,7 @@
 				540C40EE1D7F9BC0009C9518 /* BDViewController.m in Sources */,
 				540C40DA1D7F9BA8009C9518 /* AppDelegate.m in Sources */,
 				540C40D71D7F9BA8009C9518 /* main.m in Sources */,
-				540C40F21D7F9C02009C9518 /* JSWave.m in Sources */,
+				5454F0D41F232D8A001AC083 /* JSWave.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +205,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -249,8 +251,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
